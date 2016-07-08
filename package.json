@@ -1,15 +1,15 @@
 {
-  "name": "one-dark-ui",
+  "name": "varone-dark-ui",
   "theme": "ui",
   "version": "1.4.0",
-  "description": "Atom One dark UI theme",
+  "description": "Variant of Atom One dark UI theme",
   "keywords": [
     "dark",
     "adaptive",
     "ui"
   ],
   "license": "MIT",
-  "repository": "https://github.com/atom/one-dark-ui",
+  "repository": "https://github.com/atom/varone-dark-ui",
   "main": "lib/main",
   "engines": {
     "atom": ">0.40.0"
