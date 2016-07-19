@@ -87,7 +87,7 @@
     // Close icon ----------------------
 
     .close-icon {
-      top: .77em; // shoule be .75em but that messes up the pixel snapping
+      top: (@ui-tab-height - 1.5)/2; // shoule be .75em but that messes up the pixel snapping
       right: .77em;
       z-index: 2;
       font-size: 1em;
@@ -175,7 +175,7 @@
       }
     }
     &:not(:hover) .close-icon {
-      top: .75em;
+      top: (@ui-tab-height - 1.25)/2;
       right: .75em;
       width: 1.5em;
       height: 1.5em;
