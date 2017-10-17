@@ -5,9 +5,6 @@
   background: @tree-view-background-color;
 
   .project-root.project-root {
-    &:first-child {
-      padding-top: @ui-padding-pane;
-    }
     &:before {
       height: @ui-tab-height;
       background-clip: padding-box;
@@ -18,7 +15,7 @@
   }
 
   .selected:before {
-    background: @background-color-highlight;
+    background: @tree-view-background-selected-color;
   }
 }
 
@@ -31,11 +28,6 @@
   .tree-view-resize-handle {
     width: 8px;
   }
-}
-
-.tree-view-scroller {
-  border-width: 0 0 1px 0;
-  border-image: linear-gradient(to right, @tree-view-background-color @component-padding, @base-border-color @component-padding * 5) 0 0 1 0 stretch;
 }
 
 // Variable height, based on ems
@@ -64,6 +56,20 @@
   }
 }
 
+// Arrow icon
+.list-group,
+.list-tree {
+  .header.header.header.header::before {
+    top: initial;
+    line-height: inherit;
+    height: inherit;
+    vertical-align: top;
+  }
+}
+.tree-view .project-root-header.project-root-header.project-root-header.project-root-header::before {
+  line-height: 2.5em;
+}
+
 // Active tree-view marker --------------
 
 .tree-view::before {
@@ -71,8 +77,6 @@
   position: fixed;
   pointer-events: none;
   z-index: 1;
-  margin-top: @ui-padding-pane;
-  margin-left: -@component-icon-padding;
   height: @ui-tab-height;
   width: 2px;
   background: @accent-color;
