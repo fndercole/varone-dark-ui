@@ -237,12 +237,14 @@
   pointer-events: none;
   z-index: 2;
   top: @tab-border-size;
+  right: @tab-border-size;
   left: @tab-border-size;
   bottom: @tab-border-size;
-  width: 2px;
+  // width: 2px;
+  border-bottom: solid @accent-color 4px;
   border-top-left-radius: inherit;
   border-radius: @component-border-radius 0;
-  background: @accent-color;
+  background: none;
   opacity: 0;
   transition: opacity .16s;
 
