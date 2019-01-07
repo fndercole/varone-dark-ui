@@ -87,8 +87,8 @@
 @input-selection-color:             mix(@accent-color, @input-background-color, 25%);
 @input-selection-color-focus:       mix(@accent-color, @input-background-color, 50%);
 
-@overlay-backdrop-color:            hsl(@ui-hue,@ui-saturation,10%);
-@overlay-backdrop-opacity:          .9;
+@overlay-backdrop-color:            hsl(@ui-hue, @ui-saturation, @ui-lightness*0.2);
+@overlay-backdrop-opacity:          .75;
 
 @progress-background-color:         @accent-color;
 
@@ -103,8 +103,9 @@
 @tab-text-color-active:             @text-color-highlight;
 @tab-text-color-editor:             contrast(@ui-syntax-color, darken(@ui-syntax-color, 20%), @text-color-highlight );
 @tab-background-color-editor:       @ui-syntax-color;
+@tab-inactive-status-added:         fade(@text-color-success, 55%);
+@tab-inactive-status-modified:      fade(@text-color-warning, 55%);
 
-@tree-view-background-selected-color: lighten(@level-3-color, 5%);
 
 @tooltip-background-color:          @accent-bg-color;
 @tooltip-text-color:                @accent-bg-text-color;
